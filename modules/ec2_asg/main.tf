@@ -16,7 +16,7 @@ resource "aws_autoscaling_group" "this" {
   desired_capacity     = var.desired_capacity
   max_size             = var.max_size
   min_size             = var.min_size
-#   vpc_zone_identifier  = var.private_subnet_ids
+  vpc_zone_identifier  = var.private_subnet_ids
   target_group_arns    = [var.target_group_arn]
 
   launch_template {

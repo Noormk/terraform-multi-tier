@@ -10,6 +10,11 @@ output "public_subnet_ids" {
     description = "List of public subnet IDs"
 }
 
+output "private_subnet_ids" {
+  value = module.vpc.private_subnet_ids
+  description = "List of private subnet IDs"
+}
+
 output "alb_dns_name" {
   value = module.alb.alb_dns_name
 }
@@ -17,3 +22,8 @@ output "alb_dns_name" {
 output "target_group_arn" {
   value = module.alb.target_group_arn
 }
+
+output "app_sg_id" {
+  value = module.security.app_sg_id
+}
+

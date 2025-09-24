@@ -38,6 +38,7 @@ public_subnets = ["10.0.1.0/24"]
 azs            = ["eu-west-2"]
 ami_id         = "ami-123456"
 db_password    = "SuperSecretPass123"
+```
 
 ## Outputs 
 - ALB DNS Name 

@@ -11,19 +11,16 @@ variable "vpc_cidr" {
 }
 
 variable "public_subnets" {
-    type = list(string)
-    default = ["10.0.1.0/24"]
-    description = "list of CIDR blocks for public subnets"
+  type    = list(string)
+  default = ["10.1.1.0/24", "10.1.2.0/24"]
 }
 
 variable "private_subnets" {
-  type        = list(string)
-  default     = ["10.0.2.0/24"]
-  description = "List of CIDR blocks for private subnets"
+  type    = list(string)
+  default = ["10.1.11.0/24", "10.1.12.0/24"]
 }
 
 variable "azs" {
-    type = list(string)
-    default = ["eu-west-2a"]
-    description = "list of AZs for subnets"
+  type    = list(string)
+  default = ["eu-west-2a", "eu-west-2b"]
 }

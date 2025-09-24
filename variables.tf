@@ -1,6 +1,3 @@
-## define project-wide variables (region, project name, instance type...)
-## keeps code clean+ reusable
-
 variable "aws_region" {
     default = "eu-west-2"
 }
@@ -14,6 +11,10 @@ variable "vpc_cidr" {
 }
 
 variable "public_subnets" {
+  type = list(string)
+}
+
+variable "private_subnets" {
   type = list(string)
 }
 

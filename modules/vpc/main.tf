@@ -1,6 +1,3 @@
-# vpc, subnets, igw, route tables
-
-#vpc = creates your own isolated network with a /16 CIDR block
 resource "aws_vpc" "main" {
   cidr_block = var.vpc_cidr
 
