@@ -1,10 +1,26 @@
 # Terraform Multi-Tier AWS Infrastructure
 
 ## Overview
-Brief explanation of what the project does and what resources it creates.
+This project deploys a fully automated multi-tier web application infrastructure on AWS using Terraform. 
+It includes:
+- A VPC with public and private subnets across multiple Availability Zones
+- An Application Load Balancer (ALB) in public subnets
+- Auto Scaling EC2 instances behind the ALB
+- A secure RDS database in private subnets
+- Security groups and route tables for proper network isolation
 
 ## Project Structure
-Tree view of directories and modules.
+terraform-multi-tier/
+├── modules/
+│   ├── vpc/
+│   ├── alb/
+│   ├── ec2_asg/
+│   ├── rds/
+│   └── security/
+├── main.tf
+├── variables.tf
+├── terraform.tfvars
+└── README.md
 
 ## Prerequisites
 ### Software Requirements
@@ -46,11 +62,27 @@ db_password    = "SuperSecretPass123"
 - ASG details
 
 ## Architecture
+         Internet
+            |
+           ALB
+         /     \
+     EC2-ASG   EC2-ASG
+         \     /
+          RDS (private)
 
+## Outputs
+Outputs provided by Terraform after apply:
+- ALB DNS Name → access your app
+- RDS Endpoint → database connection
+- Auto Scaling Group details → instance IDs and count
+
+## Tips
+- Ensure the AMI ID exists in your AWS region
+- Update terraform.tfvars to match your desired subnets and AZs
+- Destroy resources after testing to avoid charges
 
 ## Cleanup
 Steps to destroy the infrastructure
 ```bash
-terraform destroy -var="db_password=SuperSecretPass123"
-Copy code
+terraform destroy 
 
