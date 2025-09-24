@@ -2,7 +2,7 @@
 
 ## Overview
 This project deploys a fully automated multi-tier web application infrastructure on AWS using Terraform. 
-It includes:
+### It includes:
 - A VPC with public and private subnets across multiple Availability Zones
 - An Application Load Balancer (ALB) in public subnets
 - Auto Scaling EC2 instances behind the ALB
@@ -37,13 +37,17 @@ terraform-multi-tier/
      git clone 
      cd terraform-multi-tier
 2. Initialize Terraform
+    ```bash
     terraform init
 3. Validate configuration
+    ```bash
     terraform validate
 4. Plan deployment
-    terraform plan -var="db_password=SuperSecretPass123"
+    ```bash
+    terraform plan
 5. Apply changes
-    terraform apply -var="db_password=SuperSecretPass123"
+    ```bash
+    terraform apply 
 
 ## Apply changes
 ### Example terraform.tfvars
