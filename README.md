@@ -31,6 +31,11 @@ terraform-multi-tier/
 - AWS account
 - Valid AMI ID in your region
 
+## Setup 
+1. Copy the example vars file:
+   cp terraform.tfvars.example terraform.tfvars
+2. Edit `terraform.tfvars` with your own values.
+
 ## Usage 
 1. Clone the repo
      ```bash
