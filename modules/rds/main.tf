@@ -1,14 +1,12 @@
-# Create RDS Subnet Group
 resource "aws_db_subnet_group" "rds_subnets" {
-  name       = "${var.db_name}-subnet-group" #fix
+  name       = "${var.db_name}-subnet-group" 
   subnet_ids = var.db_subnet_ids
 
   tags = {
-    Name = "${var.db_name}-subnet-group" #fix 
+    Name = "${var.db_name}-subnet-group" 
   }
 }
 
-# Create RDS instance
 resource "aws_db_instance" "rds" {
   allocated_storage    = var.db_allocated_storage
   engine               = var.db_engine
