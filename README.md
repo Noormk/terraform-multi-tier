@@ -72,6 +72,30 @@ db_password    = "SuperSecretPass123"
 - RDS Endpoint
 - ASG details
 
+## AWS console showing the deployed resources
+### Terraform apply 
+![alt text](<Apply complete.png>)
+
+### 1. Network layer 
+- VPC
+![alt text](VPC.png)
+- Subnets
+![alt text](Subnets.png)
+- Route Tables
+![alt text](RT.png)
+### 2. Web Tier 
+- EC2 Instances
+![alt text](Instances.png)
+- Auto Scaling Group (ASG)
+![alt text](ASG.png)
+- Application Load Balancer (ALB)
+![alt text](LB.png)
+## 3. Application / Database Tier 
+- RDS instance 
+![alt text](<Screenshot 2025-09-24 182355.png>)
+- Security Groups
+![alt text](SG.png)
+
 ## Architecture
          Internet
             |
