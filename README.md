@@ -10,6 +10,7 @@ This project deploys a fully automated multi-tier web application infrastructure
 - Security groups and route tables for proper network isolation
 
 ## Project Structure
+```
 terraform-multi-tier/
 ├── modules/
 │   ├── vpc/
@@ -21,6 +22,7 @@ terraform-multi-tier/
 ├── variables.tf
 ├── terraform.tfvars
 └── README.md
+```
 
 ## Prerequisites
 ### Software Requirements
