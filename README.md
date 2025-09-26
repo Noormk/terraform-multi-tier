@@ -79,25 +79,25 @@ db_password    = "SuperSecretPass123"
 
 ### 1. Network Layer
 - **VPC**  
-  ![VPC Screenshot](VPC.png)
+  ![VPC Screenshot](screenshots/VPC.png)
 - **Subnets**  
-  ![Subnets Screenshot](Subnets.png)
+  ![Subnets Screenshot](screenshots/Subnets.png)
 - **Route Tables**  
-  ![Route Tables Screenshot](RT.png)
+  ![Route Tables Screenshot](screenshots/RT.png)
 
 ### 2. Web Tier
 - **EC2 Instances**  
-  ![EC2 Instances Screenshot](Instances.png)
+  ![EC2 Instances Screenshot](screenshots/Instances.png)
 - **Auto Scaling Group (ASG)**  
-  ![ASG Screenshot](ASG.png)
+  ![ASG Screenshot](screenshots/ASG.png)
 - **Application Load Balancer (ALB)**  
-  ![ALB Screenshot](LB.png)
+  ![ALB Screenshot](screenshots/LB.png)
 
 ### 3. Application / Database Tier
 - **RDS Instance**  
-  ![RDS Screenshot](Screenshot 2025-09-24 182355.png)
+  ![RDS Screenshot](screenshots/Screenshot 2025-09-24 182355.png)
 - **Security Groups**  
-  ![Security Groups Screenshot](SG.png)
+  ![Security Groups Screenshot](screenshots/SG.png)
 
 ## Architecture
          Internet
